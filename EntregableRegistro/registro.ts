@@ -8,11 +8,14 @@ class Registro {
     private alta: boolean;
     private vehiculo: Vehiculo;
 
+
+
     constructor(titular: string, arba: boolean, alta: boolean, vehiculo: Vehiculo) {
         this.titular = titular;
         this.arba = arba !== undefined ? arba : false;
         this.alta = alta !== undefined ? alta : false;
         this.vehiculo = vehiculo;
+
     }
     public getTitular(): string {
         return this.titular;
@@ -32,9 +35,17 @@ class Registro {
     public setAlta(alta: boolean): void {
         this.alta = alta;
     }
+    public setTitular(titular: string): void {
+        this.titular = titular;
+    }
     public setVehiculo(dominio: string, tipo: TipoVehiculo, modelo: number): void {
         this.vehiculo.setDominio(dominio);
         this.vehiculo.setTipo(tipo);
         this.vehiculo.setModelo(modelo);
+    }
+    public setRegistro(titular: string, arba: boolean, alta: boolean): void {
+        this.setTitular(titular);
+        this.setArba(arba);
+        this.setAlta(alta);
     }
 }
