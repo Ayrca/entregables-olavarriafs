@@ -9,11 +9,4 @@ export class Camion extends Vehiculo {
     public getCargaMaxima(): number {
         return this.cargaMaxima;
     }
-    public estado(): void {
-        if (this.modelo > 2013) {
-            console.log("el vehiculo esta en buen estado")
-        } else {
-            console.log("el vehiculo esta viejo")
-        }
-    }
 }

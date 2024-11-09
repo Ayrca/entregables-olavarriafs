@@ -23,4 +23,5 @@ registro.eliminarRegistro("4321");
 
 console.log(registro.getListaregistros());
 
-moto1.estado();
+console.log(moto1.getEstado());
+console.log(camion2.getEstado());

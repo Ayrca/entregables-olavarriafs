@@ -29,5 +29,13 @@ class Vehiculo {
     setTipo(tipo: TipoVehiculo): void {
         this.tipo = tipo
     }
+    public getEstado(): string {
+        if (this.modelo > 2013) {
+            return "el vehiculo esta en buen estado"
+        } else {
+            return "el vehiculo esta viejo"
+        }
+    }
 }
+
 

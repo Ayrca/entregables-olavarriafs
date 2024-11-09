@@ -10,12 +10,6 @@ export class Moto extends Vehiculo {
     public getCilindrada(): number {
         return this.cilindrada;
     }
-    public estado(): void {
-        if (this.modelo > 2013) {
-            return console.log("el vehiculo esta en buen estado");
-        } else {
-            return console.log("el vehiculo esta viejo");
-        }
-    }
+
 
 }
