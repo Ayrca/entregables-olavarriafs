@@ -27,6 +27,16 @@ export class Asesino extends Personaje {
         console.log("ataque basico asesino")
     }
     evolucionar(): Personaje {
-        return new AsesinoSupremo(stats)
+        const statsAsesinoSupremo = {
+            hp: stats.hp * 5,
+            mana: stats.mana * 5,
+            atqFisico: stats.atqFisico * 5,
+            atqMagico: stats.atqMagico * 5,
+            agilidad: stats.agilidad * 5,
+            defensa: stats.defensa * 5,
+            experiencia: stats.experiencia * 5,
+            nivel: stats.nivel,
+        };
+        return new AsesinoSupremo(this.nombre, statsAsesinoSupremo)
     }
 }

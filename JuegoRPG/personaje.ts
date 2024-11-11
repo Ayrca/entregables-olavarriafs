@@ -52,4 +52,6 @@ export abstract class Personaje {
     }
     abstract evolucionar(): Personaje;
 
+
+
 }
